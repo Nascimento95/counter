@@ -1,7 +1,6 @@
 import react from 'react'
-import Button from './components/button'
 import Counter from './components/Counter'
-import CounterTwo from './components/countertwo'
+
 
 class App extends react.Component {
   constructor(){
@@ -46,7 +45,7 @@ class App extends react.Component {
         <h1 className="text-center">counter</h1>
         
         <Counter substract = {this.handleMoinClick} increment = {this.handlePlusClick}  count = {this.state.count} />
-        <CounterTwo substract = {this.handleMoinClick2} increment = {this.handlePlusClick2}  count2 = {this.state.counte} />
+        <Counter substract = {this.handleMoinClick2} increment = {this.handlePlusClick2}  count = {this.state.counte} />
       </>
     )
   }
